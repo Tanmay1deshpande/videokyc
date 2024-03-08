@@ -1,0 +1,36 @@
+.genericdivider{
+    border: 1px solid white;
+    margin: auto;
+    width: 1300px;
+}
+
+.herotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: ; */
+}
+
+h3{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    margin-top: 40px;
+}
+
+h1{
+    font-size: 55px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+p.description{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    width: 600px;
+    color:white;
+    text-align: center;
+}

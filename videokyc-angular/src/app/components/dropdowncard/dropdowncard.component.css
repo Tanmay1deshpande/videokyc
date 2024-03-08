@@ -1,0 +1,28 @@
+.homeheading{
+    color:white;
+    font-size:25px;
+    font-weight:500;
+    margin:auto;
+    margin: 40px 0 40px 0;
+}
+
+.ddcard{
+    background-color: #0B0F38;
+    padding: 15px;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    gap: 40px;
+    margin: auto;
+    width: 600px;
+}
+
+.select{
+    color:white;
+    font-size:25px;
+    font-weight:400;
+}
+
+/* #process{
+
+} */

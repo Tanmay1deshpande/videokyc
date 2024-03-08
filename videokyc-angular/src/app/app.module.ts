@@ -10,6 +10,10 @@ import { LoginComponent } from './page/login/login.component';
 import { HomeComponent } from './page/home/home.component';
 import { VkycComponent } from './page/vkyc/vkyc.component';
 import { FormsModule } from '@angular/forms';
+import { HomenavbarComponent } from './components/homenavbar/homenavbar.component';
+import { FlowitemComponent } from './components/flowitem/flowitem.component';
+import { DropdowncardComponent } from './components/dropdowncard/dropdowncard.component';
+import { InputcardComponent } from './components/inputcard/inputcard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     LoginComponent,
     HomeComponent,
-    VkycComponent
+    VkycComponent,
+    HomenavbarComponent,
+    FlowitemComponent,
+    DropdowncardComponent,
+    InputcardComponent
   ],
   imports: [
     BrowserModule,
