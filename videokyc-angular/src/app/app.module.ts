@@ -15,6 +15,8 @@ import { FlowitemComponent } from './components/flowitem/flowitem.component';
 import { DropdowncardComponent } from './components/dropdowncard/dropdowncard.component';
 import { InputcardComponent } from './components/inputcard/inputcard.component';
 import { OverlayformComponent } from './components/overlayform/overlayform.component';
+import { DatacardComponent } from './components/datacard/datacard.component';
+import { JourneyComponent } from './page/journey/journey.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { OverlayformComponent } from './components/overlayform/overlayform.compo
     FlowitemComponent,
     DropdowncardComponent,
     InputcardComponent,
-    OverlayformComponent
+    OverlayformComponent,
+    DatacardComponent,
+    JourneyComponent
   ],
   imports: [
     BrowserModule,

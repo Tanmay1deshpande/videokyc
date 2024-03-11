@@ -15,6 +15,13 @@ h4{
     margin-bottom: 50px;
 }
 
+.flow{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ol{
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -40,4 +47,25 @@ ol li{
     width: 1300px;
     margin: auto;
     margin-top: 50px;
+}
+.primary-btn{
+    height: 50px;
+    width: 300px;
+    font-weight: 500;
+    color:#3E3B61 ;
+    background-color:#00C2FF ;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.primary-btn:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 4px 4px 0 0 white;
+    transition: 0.3s ease-in;
 }

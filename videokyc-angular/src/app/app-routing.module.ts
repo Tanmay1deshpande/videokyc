@@ -5,6 +5,7 @@ import { LoginComponent } from './page/login/login.component';
 import { VkycComponent } from './page/vkyc/vkyc.component';
 import { SignupComponent } from './page/signup/signup.component';
 import { OverlayformComponent } from './components/overlayform/overlayform.component';
+import { JourneyComponent } from './page/journey/journey.component';
 
 const routes: Routes = [
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'vkyc', component: VkycComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'journey', component: JourneyComponent },
   { path: '**', component: SignupComponent }
 
 ];

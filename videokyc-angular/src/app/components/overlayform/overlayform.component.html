@@ -1,23 +1,31 @@
 <form action="submit" id="form">
     <div class="bdbd">
         <label for="bd">Business Description: </label>
-        <input type="text" name="bd" />
+        <input type="text" name="bd" placeholder="Enter data" />
     </div>
 
     <div class="boxbox">
 
         <div class="stepy">
-            <h5 class="steps" *ngFor="let item of stepsandid">{{item.step}}</h5>
+            <h5 class="steps" *ngFor="let item of steps">{{item.stepno}}</h5>
         </div>
         <div class="formy">
-                <select *ngFor="let item of stepsandid" name={{item.id}} id={{item.id}} name={{item.id}}>
+                <select name="login" id="s1">
+                    <option value="login" >Login</option>
+                </select>
+
+                <select *ngFor="let item of steps" name={{item.id}} id={{item.id}} name={{item.id}}>
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option *ngFor="let item of steps" value={{item.step}} >{{ item.step }}</option>
+                </select>
+
+                <select name="kyc" id="s8">
+                    <option value="kyc" >KYC Report</option>
                 </select>
         </div>
     </div>
 
-    <button class="primary-btn">Submit</button>
+    <button class="primary-btn" routerLink="/vkyc">Submit</button>
 
     <hr class="divider">
 
