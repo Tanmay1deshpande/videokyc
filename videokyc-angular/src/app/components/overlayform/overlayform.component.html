@@ -1,0 +1,26 @@
+<form action="submit" id="form">
+    <div class="bdbd">
+        <label for="bd">Business Description: </label>
+        <input type="text" name="bd" />
+    </div>
+
+    <div class="boxbox">
+
+        <div class="stepy">
+            <h5 class="steps" *ngFor="let item of stepsandid">{{item.step}}</h5>
+        </div>
+        <div class="formy">
+                <select *ngFor="let item of stepsandid" name={{item.id}} id={{item.id}} name={{item.id}}>
+                    <option class="selectdefault" value="none" selected disabled hidden>Select</option>
+                    <option *ngFor="let item of steps" value={{item.step}} >{{ item.step }}</option>
+                </select>
+        </div>
+    </div>
+
+    <button class="primary-btn">Submit</button>
+
+    <hr class="divider">
+
+
+
+</form>

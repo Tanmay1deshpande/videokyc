@@ -14,6 +14,7 @@ import { HomenavbarComponent } from './components/homenavbar/homenavbar.componen
 import { FlowitemComponent } from './components/flowitem/flowitem.component';
 import { DropdowncardComponent } from './components/dropdowncard/dropdowncard.component';
 import { InputcardComponent } from './components/inputcard/inputcard.component';
+import { OverlayformComponent } from './components/overlayform/overlayform.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InputcardComponent } from './components/inputcard/inputcard.component';
     HomenavbarComponent,
     FlowitemComponent,
     DropdowncardComponent,
-    InputcardComponent
+    InputcardComponent,
+    OverlayformComponent
   ],
   imports: [
     BrowserModule,

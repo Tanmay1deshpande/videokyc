@@ -11,14 +11,16 @@
 
 .ddcard{
     background-color: #0B0F38;
-    padding: 40px;
+    padding: 50px;
     display: flex;
     align-items:baseline;
     justify-content: space-between;
     gap: 40px;
     margin: auto;
-    width: 600px;
+    width: 800px;
     border-radius: 15px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .select{
@@ -47,10 +49,3 @@
     transition: 0.3s ease-in;
 }
 
-.divider{
-    border: 1px solid white;
-    width: 1300px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}

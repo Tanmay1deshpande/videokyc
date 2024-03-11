@@ -13,13 +13,7 @@
 
         <div class="journeylist">
             <ol class="jlist">
-            <li>Login</li>
-            <li>Personal Details</li>
-            <li>Location</li>
-            <li>PAN Card</li>
-            <li>DigiLocker</li>
-            <li>Face Match</li>
-            <li>KYC Report</li>
+              <li *ngFor="let item of stepslist">{{item.step}}</li>
             </ol>
         </div>
       </div>
@@ -33,9 +27,9 @@
     </div>
     
     <div class="dataheadings">
-      <div class="titles">
-        <h4 class="titlesheading">Personal Details</h4>
-        <div class="expandicon"></div>
+      <div class="titles" *ngFor="let item of stepslist">
+        <h4 class="titlesheading">{{item.step}}</h4>
+        <div class="expandicon"><i class="fa-solid fa-angle-down"></i></div>
         <hr>
       </div> 
 

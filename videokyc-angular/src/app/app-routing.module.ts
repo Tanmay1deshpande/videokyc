@@ -4,6 +4,7 @@ import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
 import { VkycComponent } from './page/vkyc/vkyc.component';
 import { SignupComponent } from './page/signup/signup.component';
+import { OverlayformComponent } from './components/overlayform/overlayform.component';
 
 const routes: Routes = [
 
