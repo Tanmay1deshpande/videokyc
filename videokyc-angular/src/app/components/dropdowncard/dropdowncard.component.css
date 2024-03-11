@@ -4,17 +4,21 @@
     font-weight:500;
     margin:auto;
     margin: 40px 0 40px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .ddcard{
     background-color: #0B0F38;
-    padding: 15px;
+    padding: 40px;
     display: flex;
     align-items:baseline;
     justify-content: space-between;
     gap: 40px;
     margin: auto;
     width: 600px;
+    border-radius: 15px;
 }
 
 .select{
@@ -23,6 +27,30 @@
     font-weight:400;
 }
 
-/* #process{
+.primary-btn{
+    height: 50px;
+    width: 450px;
+    font-weight: 500;
+    color:#3E3B61 ;
+    background-color:#00C2FF ;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+}
 
-} */
+.primary-btn:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 4px 4px 0 0 white;
+    transition: 0.3s ease-in;
+}
+
+.divider{
+    border: 1px solid white;
+    width: 1300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

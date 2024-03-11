@@ -1,0 +1,43 @@
+h4{
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.box{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ol{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    margin: auto;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 50px;
+}
+
+ol li{
+    list-style-position: inside;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    color: white;
+    font-size: 20px;
+}
+
+.divider{
+    border: 1px solid white;
+    width: 1300px;
+    margin: auto;
+    margin-top: 50px;
+}
