@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class DropdowncardComponent {
 
+  constructor(private overlay: Overlay){}
+
+  openModal(){
+    const overlayRef = this.overlay.create();
+    overlayRef.attach();
+  }
+  
 }
