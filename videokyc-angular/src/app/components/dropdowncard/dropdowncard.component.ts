@@ -6,12 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./dropdowncard.component.css']
 })
 export class DropdowncardComponent {
-
+  @ViewChild(CdkPortal) portal: CdkPortal;
+  
   constructor(private overlay: Overlay){}
 
   openModal(){
     const overlayRef = this.overlay.create();
-    overlayRef.attach();
+    overlayRef.attach(this.portal);
   }
   
 }
