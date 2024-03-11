@@ -27,6 +27,7 @@ html{
     align-items: center;
 }
 
+
 .logo{
     background-color: blue;
     border-radius: 50px;
@@ -109,4 +110,13 @@ input:hover{
     font-weight: bold;
     border: none;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 4px 4px 0 0 white;
+    transition: 0.3s ease-in;
 }

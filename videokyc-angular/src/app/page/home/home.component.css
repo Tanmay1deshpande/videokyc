@@ -4,6 +4,12 @@
     width: 1300px;
 }
 
+.welcome{
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
 .herotext{
     display: flex;
     flex-direction: column;
@@ -16,7 +22,7 @@ h3{
     font-size: 45px;
     font-weight: 500;
     color: white;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 h1{

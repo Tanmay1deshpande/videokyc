@@ -1,14 +1,16 @@
 <nav>
     <div class="flexbox">
-        <div class="logo">Jio</div>
+        <div class="logo">
+            <a routerLink="/home">Jio</a>
+        </div>
         <ul class="nav-list">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Partner Management</li>
+            <li class="nav-item" routerLink="/home">Home</li>
+            <li class="nav-item" routerLink="/vkyc">Partner Management</li>
             <li class="nav-item">About Us</li>
         </ul>
         <div class="buttons">
-            <button class= "loginbtn">Login</button>
-            <button class="signupbtn">Sign Up</button>
+            <button class= "loginbtn" routerLink="/login">Login</button>
+            <button class="signupbtn" routerLink="/signup">Sign Up</button>
         </div>
         
     </div>
