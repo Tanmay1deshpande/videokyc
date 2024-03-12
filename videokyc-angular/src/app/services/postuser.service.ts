@@ -21,3 +21,4 @@ export class PostuserService {
     return this.http.get(BASE_URL+'userdata/add')
   }
 }
+
