@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { PostuserService } from 'src/app/services/postuser.service';
 
 @Component({
   selector: 'app-overlayform',
@@ -17,9 +19,32 @@ export class OverlayformComponent {
   {step:'NA', id:'s9', stepno:'Step 8'}
 ]
   someExpression: null;
-  constructor(){
+  constructor(private postuserService: PostuserService, private fb: FormBuilder){
     this.someExpression = null;
   }
 
+
+  postChoiceForm!: FormGroup;
+
+  ngOnInit(){
+    this.postChoiceForm = this.fb.group({
+      businessdesc : [null,Validators.required],
+      step1 : [null,Validators.required],
+      step2 : [null,Validators.required],
+      step3 : [null,Validators.required],
+      step4 : [null,Validators.required],
+      step5 : [null,Validators.required],
+      step6 : [null,Validators.required],
+      step7 : [null,Validators.required],
+      step8 : [null,Validators.required]
+    })
+  }
+
+  postChoiceData(){
+    console.log(this.postChoiceForm.value);
+    this.postuserService.postChoice(this.postChoiceForm.value).subscribe((res)=>{
+      console.log(res);
+    })
+  }
   
 }

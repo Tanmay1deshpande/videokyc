@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 
 const BASE_URL=['https://localhost:8080'];
+const TEST_URL=['http://localhost:'];
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,10 @@ export class PostuserService {
 
   postUser(user:any): Observable<any>{
     return this.http.post(BASE_URL + '/userdata/add',user);
+  }
+
+  postChoice(choice:any): Observable<any>{
+    return this.http.post(TEST_URL+'4200',choice);
   }
 
   getUser(): Observable<any>{

@@ -93,3 +93,27 @@ label{
     margin: auto;
     margin-bottom: 50px;
 }
+
+.dropdowns{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: row;
+}
+
+.left{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
