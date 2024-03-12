@@ -19,23 +19,27 @@
 
 .video{
     background-color: gray;
-    width: 400px;
-    height: 600px;
+    width: 20vw;
+    height: 60vh;
 
 }
 .vertical{
     width: 2px;
-    height: 700px;
+    height: 500px;
     color: white;
     background-color: white;
     margin-right: 10px;
 }
 div.titles h4{
     z-index: 200;
-    position: fixed;
+    position: absolute;
 }
 i{
     z-index: 100;
-    margin-left: 400px;
+    margin-left: 150px;
     cursor: pointer;
+}
+
+div.titles hr{
+    overflow: hidden;
 }

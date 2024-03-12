@@ -44,7 +44,7 @@ ol li{
 
 .divider{
     border: 1px solid white;
-    width: 1300px;
+    width: 100vw;
     margin: auto;
     margin-top: 50px;
 }
