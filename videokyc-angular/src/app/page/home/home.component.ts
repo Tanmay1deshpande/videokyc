@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IpaddressService } from 'src/app/services/ipaddress.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+
+  ip='';
+  constructor(private ipaddressService: IpaddressService){
+    this.ipaddressService.getIp().subscribe((data:any) =>{
+      console.log(data)
+      this.ip = data.ip;
+    })
+  }
+
+  
 }
