@@ -1,4 +1,5 @@
 <app-navbar></app-navbar>
+
 <div class="signupbox">
     <div class="heading">
         <div class="logo">Jio</div>
@@ -12,12 +13,12 @@
         <a class="link" routerLink="/signup">Sign Up!</a>
     </div>
     
-    <div class="form">
-        
-        <input type="text" placeholder="UserName">
-        <input type="text" placeholder="Email ID">
-        <input type="text" placeholder="Password">
-        <button class="primary-btn" routerLink="/home">Login</button>
+    <form class="form" [formGroup]="postUserForm">
+    
+        <input type="text" name="username" placeholder="UserName" required formControlName="username">
+        <input type="text" name="email" placeholder="Email ID" required formControlName="email">
+        <input type="text" name="password" placeholder="Password" required formControlName="password">
+        <button class="primary-btn" (click)="postUserData()" >Login</button>
 
-    </div>
+    </form>
 </div>

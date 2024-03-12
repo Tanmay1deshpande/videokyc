@@ -12,7 +12,7 @@ export class HomeComponent {
   ip='';
   constructor(private ipaddressService: IpaddressService){
     this.ipaddressService.getIp().subscribe((data:any) =>{
-      console.log(data)
+      console.log(data.ip,data.country,data.area)
       this.ip = data.ip;
     })
   }

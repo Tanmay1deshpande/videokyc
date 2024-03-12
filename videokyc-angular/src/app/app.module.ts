@@ -9,7 +9,7 @@ import { SignupComponent } from './page/signup/signup.component';
 import { LoginComponent } from './page/login/login.component';
 import { HomeComponent } from './page/home/home.component';
 import { VkycComponent } from './page/vkyc/vkyc.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomenavbarComponent } from './components/homenavbar/homenavbar.component';
 import { FlowitemComponent } from './components/flowitem/flowitem.component';
 import { DropdowncardComponent } from './components/dropdowncard/dropdowncard.component';
@@ -39,7 +39,8 @@ import { JourneyComponent } from './page/journey/journey.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
