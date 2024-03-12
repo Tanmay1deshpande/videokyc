@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostuserService } from 'src/app/services/postuser.service';
 
 @Component({
   selector: 'app-vkyc',
@@ -17,5 +18,20 @@ export class VkycComponent {
     {step:'KYC report', val:'s7'}
   ]
 
+
+  data: any[] = [];
+
+  constructor(private postuserService: PostuserService){}
+
+  ngOnInit(){
+    this.getAllData();
+  }
+
+  getAllData(){
+    this.postuserService.getUser().subscribe((res)=>{
+      console.log(res);
+      this.data = res;
+    })
+  }
 
 }

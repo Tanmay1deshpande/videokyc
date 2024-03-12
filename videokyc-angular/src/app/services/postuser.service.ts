@@ -15,4 +15,9 @@ export class PostuserService {
   postUser(user:any): Observable<any>{
     return this.http.post(BASE_URL + '/userdata/add',user);
   }
+
+
+  getUser(): Observable<any>{
+    return this.http.get(BASE_URL+'userdata/add')
+  }
 }
