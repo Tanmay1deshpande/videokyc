@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FirstspApplication<firstsp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.sample1.firstsp.FirstspApplication",
+            "projectName": "firstsp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
