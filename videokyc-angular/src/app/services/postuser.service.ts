@@ -18,11 +18,11 @@ export class PostuserService {
   }
 
   postChoice(choice:any): Observable<any>{
-    return this.http.post(TEST_URL+'4200',choice);
+    return this.http.post(BASE_URL+'/userdata/',choice);
   }
 
   getUser(): Observable<any>{
-    return this.http.get(BASE_URL+'userdata/add')
+    return this.http.get(BASE_URL+'/userdata/getall')
   }
 
   

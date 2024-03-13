@@ -1,21 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IpaddressService } from 'src/app/services/ipaddress.service';
+import { PostuserService } from 'src/app/services/postuser.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
 
   ip='';
-  constructor(private ipaddressService: IpaddressService){
+  constructor(private ipaddressService: IpaddressService, private postuserService: PostuserService){
     this.ipaddressService.getIp().subscribe((data:any) =>{
       console.log(data.ip,data.country)
       this.ip = data.ip;
     })
   }
+  ngOnInit(): void {
+    this.getLoginInfo();
+  }
+
+  logininfo:[]=[];
+  getLoginInfo() {
+    this.postuserService.getUser().subscribe(data => {
+      this.logininfo = data;
+    });
+  }
+
+
 
   
 }
