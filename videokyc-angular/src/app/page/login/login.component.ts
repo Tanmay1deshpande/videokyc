@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PostuserService } from 'src/app/services/postuser.service';
 
@@ -9,24 +9,35 @@ import { PostuserService } from 'src/app/services/postuser.service';
 })
 export class LoginComponent {
 
-  postUserForm!: FormGroup;
+  username: string='';
+  email: string='';
+  password: string='';
 
-  constructor(private postuserService: PostuserService, private fb: FormBuilder){}
+  @Output() loginData = new EventEmitter<string>();
 
-  ngOnInit(){
-    this.postUserForm = this.fb.group({
-      username:[null, [Validators.required]],
-      email:[null, [Validators.required,Validators.email]],
-      password:[null, [Validators.required]]
-    })
+  login(){
+    const loginString = 'Username: $(this.username), Email: $(this.email) and Password: $(this.password)';
+    this.loginData.emit(loginString);
   }
 
-  postUserData(){
-    console.log(this.postUserForm.value);
-    this.postuserService.postUser(this.postUserForm.value).subscribe((res)=>{
-      console.log(res);
-    })
-  }
+  // postUserForm!: FormGroup;
+
+  // constructor(private postuserService: PostuserService, private fb: FormBuilder){}
+
+  // ngOnInit(){
+  //   this.postUserForm = this.fb.group({
+  //     username:[null, [Validators.required]],
+  //     email:[null, [Validators.required,Validators.email]],
+  //     password:[null, [Validators.required]]
+  //   })
+  // }
+
+  // postUserData(){
+  //   console.log(this.postUserForm.value);
+  //   this.postuserService.postUser(this.postUserForm.value).subscribe((res)=>{
+  //     console.log(res);
+  //   })
+  // }
 
 
 }

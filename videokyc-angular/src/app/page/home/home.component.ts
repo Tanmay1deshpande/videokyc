@@ -7,26 +7,32 @@ import { PostuserService } from 'src/app/services/postuser.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent {
+ 
+  loginDetails: string= '';
 
+  receiveLoginData(loginData: string){
+    this.loginDetails = loginData;
+  }
 
   ip='';
-  constructor(private ipaddressService: IpaddressService, private postuserService: PostuserService){
-    this.ipaddressService.getIp().subscribe((data:any) =>{
-      console.log(data.ip,data.country)
-      this.ip = data.ip;
-    })
-  }
-  ngOnInit(): void {
-    this.getLoginInfo();
-  }
 
-  logininfo: any = [];
-  getLoginInfo() {
-    this.postuserService.getUser().subscribe(data => {
-      console.log(data);
-      this.logininfo = data;
-    });
-  }
+  // constructor(private ipaddressService: IpaddressService, private postuserService: PostuserService){
+  //   this.ipaddressService.getIp().subscribe((data:any) =>{
+  //     console.log(data.ip,data.country)
+  //     this.ip = data.ip;
+  //   })
+  // }
+  // ngOnInit(): void {
+  //   this.getLoginInfo();
+  // }
+
+  // logininfo: any = [];
+  // getLoginInfo() {
+  //   this.postuserService.getUser().subscribe(data => {
+  //     console.log(data);
+  //     this.logininfo = data;
+  //   });
+  // }
 
 }

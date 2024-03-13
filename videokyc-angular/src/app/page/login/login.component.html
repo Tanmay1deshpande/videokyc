@@ -1,5 +1,6 @@
 <app-navbar></app-navbar>
 
+
 <div class="signupbox">
     <div class="heading">
         <div class="logo">Jio</div>
@@ -13,12 +14,12 @@
         <a class="link" routerLink="/signup">Sign Up!</a>
     </div>
     
-    <form class="form" (ngSubmit)="postUserData" [formGroup]="postUserForm">
+    <form class="form" >
     
-        <input type="text" name="username" placeholder="UserName" required formControlName="username">
-        <input type="text" name="email" placeholder="Email ID" required formControlName="email">
-        <input type="text" name="password" placeholder="Password" required formControlName="password">
-        <button class="primary-btn" type="button" (click)="postUserData()" routerLink="/home">Login</button>
+        <input type="text" name="username" placeholder="UserName" required [(ngModel)]="username">
+        <input type="text" name="email" placeholder="Email ID" required [(ngModel)]="email">
+        <input type="text" name="password" placeholder="Password" required [(ngModel)]="password">
+        <button class="primary-btn" type="button" (click)="login()" routerLink="/home">Login</button>
 
     </form>
 </div>
