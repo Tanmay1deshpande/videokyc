@@ -35,8 +35,7 @@ export class OverlayformComponent {
       step4 : [null,Validators.required],
       step5 : [null,Validators.required],
       step6 : [null,Validators.required],
-      step7 : [null,Validators.required],
-      step8 : [null,Validators.required]
+      step7 : [null,Validators.required]
     })
   }
 

@@ -57,16 +57,8 @@
             </div>
 
             <div>
-                <label for="step7">Step 7: </label>
+                <label for="step7">step 7: </label>
                 <select name="step7" id="step7" required formControlName="step7">
-                    <option class="selectdefault" value="none" selected disabled hidden>Select</option>
-                    <option *ngFor="let item of steps" value={{item.step}}>{{item.step}}</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="step8">step 8: </label>
-                <select name="step8" id="step8" required formControlName="step8">
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option value="kyc">KYC Report</option>
                 </select>
@@ -74,7 +66,7 @@
 
         </div>
     </form>
-    <button class="primary-btn" (click)="postChoiceData()" routerLink="/vkyc">Submit</button>
+    <button class="primary-btn" type="button" (click)="postChoiceData()" routerLink="/vkyc">Submit</button>
 
     <hr class="divider">
 
