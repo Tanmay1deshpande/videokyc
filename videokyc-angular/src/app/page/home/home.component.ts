@@ -21,14 +21,12 @@ export class HomeComponent implements OnInit{
     this.getLoginInfo();
   }
 
-  logininfo:[]=[];
+  logininfo: any = [];
   getLoginInfo() {
     this.postuserService.getUser().subscribe(data => {
+      console.log(data);
       this.logininfo = data;
     });
   }
 
-
-
-  
 }

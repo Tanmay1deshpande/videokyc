@@ -12,9 +12,20 @@
         </div>
 
         <div class="journeylist">
-            <ol class="jlist">
+            <!-- <ol class="jlist">
               <li *ngFor="let item of stepslist">{{item.step}}</li>
-            </ol>
+            </ol> -->
+            
+            <h4 *ngFor="let choice of data">Business Description: {{choice.businessdesc}} <br><br>
+            Step 1: {{choice.step1}} <br><br> 
+            Step 2: {{choice.step2}} <br><br> 
+            Step 3: {{choice.step3}} <br><br> 
+            Step 4: {{choice.step4}} <br><br> 
+            Step 5: {{choice.step5}} <br><br> 
+            Step 6: {{choice.step6}} <br><br> 
+            Step 7: {{choice.step7}} <br><br> 
+            Step 8: {{choice.step8}} <br><br> </h4>
+            
         </div>
       </div>
   </div>
@@ -36,3 +47,4 @@
   </div>
 
 </div>
+

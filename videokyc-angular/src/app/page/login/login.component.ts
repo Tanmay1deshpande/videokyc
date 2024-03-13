@@ -23,9 +23,9 @@ export class LoginComponent {
 
   postUserData(){
     console.log(this.postUserForm.value);
-    // this.postuserService.postUser(this.postUserForm.value).subscribe((res)=>{
-    //   console.log(res);
-    // })
+    this.postuserService.postUser(this.postUserForm.value).subscribe((res)=>{
+      console.log(res);
+    })
   }
 
 

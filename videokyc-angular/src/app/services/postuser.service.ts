@@ -18,7 +18,7 @@ export class PostuserService {
   }
 
   postChoice(choice:any): Observable<any>{
-    return this.http.post(BASE_URL+'/userdata/',choice);
+    return this.http.post(BASE_URL+'/userdata/add',choice);
   }
 
   getUser(): Observable<any>{
@@ -27,3 +27,4 @@ export class PostuserService {
 
   
 }
+

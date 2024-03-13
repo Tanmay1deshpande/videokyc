@@ -1,7 +1,7 @@
 <app-homenavbar></app-homenavbar>
 
 <div class="herotext">
-    <p class="welcome">Welcome User: {{logininfo.username}} {{logininfo.email}} {{logininfo.password}} </p>
+    <p class="welcome" *ngFor="let info of logininfo" >Welcome User: {{info.username}} {{info.email}} {{info.password}} </p>
     <p class="welcome">Welcome User: {{ip}}</p>
     <h3>Jio DigiGov Team Presents</h3>
     <h1>Video KYC</h1>
@@ -11,6 +11,7 @@
 
 
 <app-flowitem></app-flowitem>
+
 
 
 
