@@ -18,6 +18,7 @@ public class FormDataService {
         return formDataRepository.findAll();
     }
 
+    @SuppressWarnings("null")
     public FormData addFormData(FormData form) {
        
         return formDataRepository.save(form);

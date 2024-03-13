@@ -20,6 +20,7 @@ public class UserService {
         return userRepository.findAll();
     }
     
+    @SuppressWarnings("null")
     public User addUser(User user) {
        
         return userRepository.save(user);
