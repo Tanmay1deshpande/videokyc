@@ -1,9 +1,15 @@
-Hello everyone,
+Hello everyone,this assignment is completed as a training exercise assigned by our L1 manager.
 
-This is a dummy project created as part of a training exercise by Tanmay Deshpande and Sejal Ahire.
-The project is given by Ms. Neha Rungta, our L1 manager. 
+# Project Title: Video KYC Partner Solutions
 
-The project in itself is fairly straightforward. We have to create a dynamic website using Angular, springboot and MySQL
-to show simple changes and data storage capabilities. 
+ ## Overview:
+The Video KYC Partner Solutions website serves as a comprehensive platform for businesses seeking KYC (Know Your Customer) services. This solution empowers businesses to explore and select tailored KYC services that best fit their needs and requirements.
+
+## Project Contributors:
+Tanmay Deshpande and Sejal Ahire
+
+## Technology Stack:
+- Frontend:  Angular 
+- Backend:  Spring Boot, MYSQL
 
 Thank you.
