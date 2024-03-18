@@ -15,7 +15,7 @@
 
             <div>
                 <label for="step2">Step 2: </label>
-                <select name="step2" id="s2" required formControlName="step2">
+                <select name="step2" id="step2" required formControlName="step2">
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option *ngFor="let item of steps" value={{item.step}}>{{item.step}}</option>
                 </select>
@@ -23,7 +23,7 @@
 
             <div>
                 <label for="step3">Step 3: </label>
-                <select name="step3" id="s3" required formControlName="step3">
+                <select name="step3" id="step3" required formControlName="step3">
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option *ngFor="let item of steps" value={{item.step}}>{{item.step}}</option>
                 </select>
@@ -31,7 +31,7 @@
 
             <div>
                 <label for="step4">step 4: </label>
-                <select name="step4" id="s4" required formControlName="step4">
+                <select name="step4" id="step4" required formControlName="step4">
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option *ngFor="let item of steps" value={{item.step}}>{{item.step}}</option>
                 </select>
@@ -42,7 +42,7 @@
         <div class="right">
             <div>
                 <label for="step5">Step 5: </label>
-                <select name="step5" id="s5" required formControlName="step5">
+                <select name="step5" id="step5" required formControlName="step5">
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option *ngFor="let item of steps" value={{item.step}}>{{item.step}}</option>
                 </select>
@@ -50,36 +50,23 @@
 
             <div>
                 <label for="step6">Step 6: </label>
-                <select name="step6" id="s6" required formControlName="step6">
+                <select name="step6" id="step6" required formControlName="step6">
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option *ngFor="let item of steps" value={{item.step}}>{{item.step}}</option>
                 </select>
             </div>
 
             <div>
-                <label for="step7">Step 7: </label>
-                <select name="step7" id="s7" required formControlName="step7">
-                    <option class="selectdefault" value="none" selected disabled hidden>Select</option>
-                    <option *ngFor="let item of steps" value={{item.step}}>{{item.step}}</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="step8">step 8: </label>
-                <select name="step8" id="s8" required formControlName="step8">
+                <label for="step7">step 7: </label>
+                <select name="step7" id="step7" required formControlName="step7">
                     <option class="selectdefault" value="none" selected disabled hidden>Select</option>
                     <option value="kyc">KYC Report</option>
                 </select>
             </div>
 
         </div>
-
-        
     </form>
-                
-        
-
-    <button class="primary-btn" type="button" (click)="postChoiceData()">Submit</button>
+    <button class="primary-btn" type="button" (click)="postChoiceData()" routerLink="/vkyc">Submit</button>
 
     <hr class="divider">
 

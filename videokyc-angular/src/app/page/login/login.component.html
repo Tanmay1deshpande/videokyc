@@ -13,7 +13,7 @@
         <a class="link" routerLink="/signup">Sign Up!</a>
     </div>
     
-    <form class="form" [formGroup]="postUserForm">
+    <form class="form" (ngSubmit)="postUserData" [formGroup]="postUserForm">
     
         <input type="text" name="username" placeholder="UserName" required formControlName="username">
         <input type="text" name="email" placeholder="Email ID" required formControlName="email">
@@ -22,3 +22,4 @@
 
     </form>
 </div>
+

@@ -23,6 +23,7 @@ public class FormData {
     private String step5;
     private String step6;
     private String step7;
+    private String step8;
    
 
     // Constructors, getters, and setters
@@ -31,7 +32,7 @@ public class FormData {
     }
 
     public FormData(String Business_Description, String step1, String step2, String step3, String step4,
-                    String step5, String step6, String step7) {
+                    String step5, String step6, String step7, String step8) {
         this.Business_Description = Business_Description;
         this.step1 = step1;
         this.step2 = step2;
@@ -40,6 +41,7 @@ public class FormData {
         this.step5 = step5;
         this.step6 = step6;
         this.step7 = step7;
+        this.step8 = step8;
         
     }
 
@@ -117,11 +119,19 @@ public class FormData {
         this.step7 = step7;
     }
 
+    public String getstep8() {
+        return step8;
+    }
+
+    public void setstep8(String step8) {
+        this.step8 = step8;
+    }
+
     @Override
     public String toString() {
         return "FormData [id=" + id + ", Business_Description=" + Business_Description + ", step1=" + step1 + ", step2="
                 + step2 + ", step3=" + step3 + ", step4=" + step4 + ", step5=" + step5
-                + ", step6=" + step6 + ", step7=" + step7 + "]";
+                + ", step6=" + step6 + ", step7=" + step7 + ", step8=" + step8 + "]";
     }
   
 
