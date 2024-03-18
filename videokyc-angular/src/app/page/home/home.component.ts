@@ -22,13 +22,28 @@ export class HomeComponent implements OnInit{
   }
 
   logininfo:[]=[];
-  getLoginInfo() {
-    this.postuserService.getUser().subscribe(data => {
-      this.logininfo = data;
-    });
-  }
 
-
+  latestRecord:any;
 
   
+  getLoginInfo() {
+    this.postuserService.getUser().subscribe(records => {
+      let latestTimestamp = 0;
+        let latestRecordIndex = -1;
+ 
+        for (let i = 0; i < records.length; i++) {
+          const record = records[i];
+          if (record.timestamp > latestTimestamp) {
+            latestTimestamp = record.timestamp;
+            latestRecordIndex = i;
+          }
+        }
+ 
+        if (latestRecordIndex !== -1) {
+          this.latestRecord = records[latestRecordIndex];
+        } else {
+          console.error('No records found or invalid response:', records);
+        }
+  })
+}
 }

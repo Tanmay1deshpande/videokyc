@@ -1,7 +1,7 @@
-<form action="submit" id="form" [formGroup]="postChoiceForm">
-    <div class="bdbd">
+<form [formGroup]="postChoiceForm">
+    <div>
         <label for="bd">Business Description: </label>
-        <input type="text" name="bd" placeholder="Enter data" required formControlName="businessdesc" />
+        <input type="text" name="bd" id="bd" placeholder="Enter data" required formControlName="business_description" />
     </div>
 
     <form class="dropdowns" [formGroup]="postChoiceForm">
@@ -79,7 +79,7 @@
                 
         
 
-    <button class="primary-btn" (click)="postChoiceData()">Submit</button>
+    <button class="primary-btn" type="button" (click)="postChoiceData()">Submit</button>
 
     <hr class="divider">
 

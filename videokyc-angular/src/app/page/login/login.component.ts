@@ -12,7 +12,7 @@ export class LoginComponent {
   postUserForm!: FormGroup;
 
   constructor(private postuserService: PostuserService, private fb: FormBuilder){}
-
+ 
   ngOnInit(){
     this.postUserForm = this.fb.group({
       username:[null, [Validators.required]],
@@ -23,9 +23,9 @@ export class LoginComponent {
 
   postUserData(){
     console.log(this.postUserForm.value);
-    // this.postuserService.postUser(this.postUserForm.value).subscribe((res)=>{
-    //   console.log(res);
-    // })
+    this.postuserService.postUser(this.postUserForm.value).subscribe((res)=>{
+      console.log(res);
+    })
   }
 
 

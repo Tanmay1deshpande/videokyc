@@ -1,19 +1,26 @@
 .mainbox{
     display: flex;
-    margin: 0px 0px 50px 200px;
+    margin: 0px 0px 50px 80px;
     color: white;
     line-height: 40px;
 }
 
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 3px 8px 3px 8px;
+    width: 730px;
+}
+
 .content{
-    width: 70%;
+    width: 85%;
     display: flex;
-    gap: 80px;
+    gap: 10px;
     margin-top: 50px;
 }
 
 .yourdata{
-    width: 30%;
+    width: 15%;
     margin-top: 50px;
 }
 
@@ -22,6 +29,11 @@
     width: 20vw;
     height: 60vh;
 
+}
+
+video{
+    width: 20vw;
+    height: 60vh;
 }
 .vertical{
     width: 2px;

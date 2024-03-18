@@ -4,6 +4,7 @@
   <div class="content">
     
     <div class="video">
+      <video #videoPlayer src="" autoplay></video>
     </div>
 
       <div class="heads">
@@ -12,13 +13,50 @@
         </div>
 
         <div class="journeylist">
-            <ol class="jlist">
-              <li *ngFor="let item of stepslist">{{item.step}}</li>
-            </ol>
+            <!-- <ol class="jlist" *ngFor="let record of latestRecord">
+              <li>Business Description: {{latestRecord.business_description}}</li>
+              <li>Step 1: {{latestrecord.step1}}</li>
+              <li>Step 2: {{latestRecord.step2}}</li>
+              <li>Step 3: {{latestRecord.step3}}</li>
+              <li>Step 4: {{latestRecord.step4}}</li>
+              <li>Step 5: {{latestRecord.step5}}</li>
+              <li>Step 6: {{latestRecord.step6}}</li>
+              <li>Step 7: {{latestRecord.step7}}</li>
+            </ol> -->
+
+            <table>
+
+              <thead>
+                <tr>
+                  <th>Business Description</th>
+                  <th>Step 1</th>
+                  <th>Step 2</th>
+                  <th>Step 3</th>
+                  <th>Step 4</th>
+                  <th>Step 5</th>
+                  <th>Step 6</th>
+                  <th>Step 7</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr *ngFor="let record of latestRecord">
+                  <td>{{record.business_description}}</td>
+                  <td>{{record.step1}}</td>
+                  <td>{{record.step2}}</td>
+                  <td>{{record.step3}}</td>
+                  <td>{{record.step4}}</td>
+                  <td>{{record.step5}}</td>
+                  <td>{{record.step6}}</td>
+                  <td>{{record.step7}}</td>
+                </tr>
+              </tbody>
+
+            </table>
         </div>
       </div>
   </div>
-  
+   
   <hr class="vertical">
   
   <div class="yourdata">

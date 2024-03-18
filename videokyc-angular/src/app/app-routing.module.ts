@@ -9,7 +9,7 @@ import { JourneyComponent } from './page/journey/journey.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo:'signup', pathMatch:'full' },
+  { path: '', redirectTo:'login', pathMatch:'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'vkyc', component: VkycComponent },

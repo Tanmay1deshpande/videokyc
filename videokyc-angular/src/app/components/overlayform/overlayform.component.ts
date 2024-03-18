@@ -18,25 +18,21 @@ export class OverlayformComponent {
   {step:'Face Match', stepno:'Step 7',id :'s7'},
   {step:'NA', id:'s9', stepno:'Step 8'}
 ]
-  someExpression: null;
-  constructor(private postuserService: PostuserService, private fb: FormBuilder){
-    this.someExpression = null;
-  }
-
+  
+  constructor(private postuserService: PostuserService, private fb: FormBuilder){}
 
   postChoiceForm!: FormGroup;
 
   ngOnInit(){
     this.postChoiceForm = this.fb.group({
-      businessdesc : [null,Validators.required],
-      step1 : [null,Validators.required],
-      step2 : [null,Validators.required],
-      step3 : [null,Validators.required],
-      step4 : [null,Validators.required],
-      step5 : [null,Validators.required],
-      step6 : [null,Validators.required],
-      step7 : [null,Validators.required],
-      step8 : [null,Validators.required]
+      business_description:[null,[Validators.required]],
+      step1:[null,[Validators.required]],
+      step2:[null,[Validators.required]],
+      step3:[null,[Validators.required]],
+      step4:[null,[Validators.required]],
+      step5:[null,[Validators.required]],
+      step6:[null,[Validators.required]],
+      step7:[null,[Validators.required]]
     })
   }
 

@@ -7,7 +7,7 @@
     </div>
 
     <h1>Login</h1>
-
+ 
     <div class="already">
         <h4>Don't have an account?</h4>
         <a class="link" routerLink="/signup">Sign Up!</a>
@@ -18,7 +18,7 @@
         <input type="text" name="username" placeholder="UserName" required formControlName="username">
         <input type="text" name="email" placeholder="Email ID" required formControlName="email">
         <input type="text" name="password" placeholder="Password" required formControlName="password">
-        <button class="primary-btn" (click)="postUserData()" >Login</button>
+        <button class="primary-btn" type="button" routerLink="/home" (click)="postUserData()" >Login</button>
 
     </form>
 </div>
