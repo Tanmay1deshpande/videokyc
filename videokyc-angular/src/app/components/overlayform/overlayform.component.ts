@@ -25,7 +25,7 @@ export class OverlayformComponent {
 
   ngOnInit(){
     this.postChoiceForm = this.fb.group({
-      business_description:[null,[Validators.required]],
+      Business_Description:[null,[Validators.required]],
       step1:[null,[Validators.required]],
       step2:[null,[Validators.required]],
       step3:[null,[Validators.required]],
