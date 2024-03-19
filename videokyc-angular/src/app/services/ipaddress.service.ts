@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +9,10 @@ export class IpaddressService {
 
   constructor(private http: HttpClient) { }
 
-  getIp(){
-    return this.http.get("https://ipapi.co/json")
+  ipapirurl = "https://ipapi.co/json";
+
+  getIp(): Observable<any>{
+    return this.http.get(this.ipapirurl);
   }
 
 

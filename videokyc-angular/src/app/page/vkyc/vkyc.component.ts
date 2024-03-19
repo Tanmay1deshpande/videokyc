@@ -32,7 +32,7 @@ export class VkycComponent implements AfterViewInit{
   latestRecord:any=[];
 
   getAllData(){
-    this.postuserService.getUser().subscribe((data)=>{
+    this.postuserService.getChoice().subscribe((data)=>{
       console.log(data);
       this.latestRecord = data;
     });

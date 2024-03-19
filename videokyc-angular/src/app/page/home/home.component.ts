@@ -10,7 +10,7 @@ import { PostuserService } from 'src/app/services/postuser.service';
 export class HomeComponent implements OnInit{
 
 
-  ip='';
+  ip!: string;
   constructor(private ipaddressService: IpaddressService, private postuserService: PostuserService){
     this.ipaddressService.getIp().subscribe((data:any) =>{
       console.log(data.ip,data.country)

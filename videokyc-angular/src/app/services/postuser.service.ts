@@ -25,6 +25,9 @@ export class PostuserService {
     return this.http.get(BASE_URL+'/userdata/getall')
   }
 
+  getChoice(): Observable<any>{
+    return this.http.get(BASE_URL+'/api/form/get')
+  }
   
 }
 
