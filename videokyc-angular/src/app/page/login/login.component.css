@@ -16,7 +16,7 @@ html{
     height: 550px;
     margin-top: 40px ;
     margin-left: 170px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding-left: 50px;
 }   
 
@@ -121,3 +121,8 @@ input:hover{
     box-shadow: 4px 4px 0 0 white;
     transition: 0.3s ease-in;
 }
+
+input.ng-invalid.ng-touched{
+    border: 1px solid rgb(153, 5, 5);
+}
+

@@ -17,6 +17,13 @@ import { InputcardComponent } from './components/inputcard/inputcard.component';
 import { OverlayformComponent } from './components/overlayform/overlayform.component';
 import { DatacardComponent } from './components/datacard/datacard.component';
 import { JourneyComponent } from './page/journey/journey.component';
+import { AlertmsgComponent } from './components/alertmsg/alertmsg.component';
+import { CommonModule } from '@angular/common';
+import { MatButtonModule, MatIconButton } from '@angular/material/button'
+import { MatIconModule } from '@angular/material/icon'
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -32,7 +39,8 @@ import { JourneyComponent } from './page/journey/journey.component';
     InputcardComponent,
     OverlayformComponent,
     DatacardComponent,
-    JourneyComponent
+    JourneyComponent,
+    AlertmsgComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,15 @@ import { JourneyComponent } from './page/journey/journey.component';
     FormsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDialogModule,
+    MatIconButton
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
