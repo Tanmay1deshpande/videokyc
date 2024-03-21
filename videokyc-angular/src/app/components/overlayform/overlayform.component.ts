@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { PostuserService } from 'src/app/services/postuser.service';
+// import { PostuserService } from 'src/app/services/postuser.service';
+import { StepsformService } from 'src/app/services/stepsform.service';
 import { AlertmsgComponent } from '../alertmsg/alertmsg.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -22,11 +23,12 @@ export class OverlayformComponent {
   {step:'NA', id:'s9', stepno:'Step 8'}
 ]
   
-  constructor(private postuserService: PostuserService, private fb: FormBuilder, private router: Router, private matDialog: MatDialog){}
+  constructor(private stepsformService: StepsformService, private fb: FormBuilder, private router: Router, private matDialog: MatDialog){}
 
   postChoiceForm!: FormGroup;
 
   ngOnInit(){
+    //form validators
     this.postChoiceForm = this.fb.group({
       business_Description:[null,[Validators.required]],
       step1:[null,[Validators.required]],
@@ -39,13 +41,15 @@ export class OverlayformComponent {
     })
   }
 
+  //function to post all partner solution form data to the database
   postChoiceData(){
     console.log(this.postChoiceForm.value);
-    this.postuserService.postChoice(this.postChoiceForm.value).subscribe((res)=>{
+    this.stepsformService.postChoice(this.postChoiceForm.value).subscribe((res)=>{
       console.log(res);
     })
   }
 
+  //trigger alert dialog if form is invalid or go to vkyc page if it is valid
   onsubmit(){
     console.log(this.postChoiceForm);
     if(this.postChoiceForm.invalid){

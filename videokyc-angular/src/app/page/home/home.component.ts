@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IpaddressService } from 'src/app/services/ipaddress.service';
-import { PostuserService } from 'src/app/services/postuser.service';
+import { LoginuserService } from 'src/app/services/loginuser.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,8 @@ export class HomeComponent implements OnInit{
 
 
   ip!: string;
-  constructor(private ipaddressService: IpaddressService, private postuserService: PostuserService){
+  constructor(private ipaddressService: IpaddressService, private loginuserService: LoginuserService){
+    //function to get IP address from ipapi.co website
     this.ipaddressService.getIp().subscribe((data:any) =>{
       console.log(data.ip,data.country)
       this.ip = data.ip;
@@ -26,8 +27,10 @@ export class HomeComponent implements OnInit{
   latestRecord:any;
 
   
+  //Function to get login info and display username on home page
   getLoginInfo() {
-    this.postuserService.getUser().subscribe(records => {
+    this.loginuserService.getUser().subscribe(records => {
+      //code to get only the latest entry from the database
       let latestTimestamp = 0;
         let latestRecordIndex = -1;
  

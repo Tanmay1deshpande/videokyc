@@ -1,7 +1,8 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { PostuserService } from 'src/app/services/postuser.service';
+import { LoginuserService } from 'src/app/services/loginuser.service';
+import { StepsformService } from 'src/app/services/stepsform.service';
 
 
 @Component({
@@ -23,7 +24,7 @@ export class VkycComponent implements AfterViewInit{
 
   data: any[] = [];
 
-  constructor(private postuserService: PostuserService, private router: Router){}
+  constructor(private stepsformService: StepsformService, private router: Router){}
 
   ngOnInit(){
     this.getAllData();
@@ -31,10 +32,11 @@ export class VkycComponent implements AfterViewInit{
 
   latestRecord:any=[];
 
+  //method to fetch all data from database of partner solution form
   getAllData(){
-    this.postuserService.getChoice().subscribe((data)=>{
-      console.log(data);
-      this.latestRecord = data;
+    this.stepsformService.getChoice().subscribe((records)=>{
+      console.log(records);
+      this.latestRecord = records;
     });
 
   //     let latestTimestamp = 0;

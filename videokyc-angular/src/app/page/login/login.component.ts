@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { PostuserService } from 'src/app/services/postuser.service';
+import { LoginuserService } from 'src/app/services/loginuser.service';
 import { MatDialog } from '@angular/material/dialog';
 import { AlertmsgComponent } from 'src/app/components/alertmsg/alertmsg.component';
 
@@ -13,11 +13,11 @@ import { AlertmsgComponent } from 'src/app/components/alertmsg/alertmsg.componen
 export class LoginComponent {
 
   postUserForm!: FormGroup;
-  showError: boolean = false;
   
-  constructor(private postuserService: PostuserService, private fb: FormBuilder, private router: Router, private matDialog: MatDialog){}
+  constructor(private loginuserService: LoginuserService, private fb: FormBuilder, private router: Router, private matDialog: MatDialog){}
  
   ngOnInit(){
+    //form validators
     this.postUserForm = this.fb.group({
       username:['', [Validators.required]],
       email:['', [Validators.required,Validators.email]],
@@ -25,12 +25,14 @@ export class LoginComponent {
     })
   }
 
+  //method to post user login details 
   postUserData(){
-    this.postuserService.postUser(this.postUserForm.value).subscribe((res)=>{
+    this.loginuserService.postUser(this.postUserForm.value).subscribe((res)=>{
       console.log(res);
     })
   }
 
+  //Method to open error dialog or move user to home page
   onsubmit(){
     console.log(this.postUserForm);
     if(this.postUserForm.invalid){
@@ -42,6 +44,7 @@ export class LoginComponent {
     }
   }
 
+  //function to open alert dialog box if user enters wrong details
   openDialog(){
     this.matDialog.open(AlertmsgComponent,{
       width: '350px'

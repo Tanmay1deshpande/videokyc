@@ -5,6 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+//Get service for IP address 
 export class IpaddressService {
 
   constructor(private http: HttpClient) { }
