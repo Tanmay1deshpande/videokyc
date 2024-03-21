@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './alertmsg.component.css'
 })
 export class AlertmsgComponent {
+  public login_message= 'Please fill all the data correctly.';
+
+
 }

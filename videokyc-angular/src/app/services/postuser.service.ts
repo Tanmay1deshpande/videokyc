@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 
 const BASE_URL=['http://localhost:8080'];
-const TEST_URL=['http://localhost:'];
+// const TEST_URL=['http://localhost:'];
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,7 @@ export class PostuserService {
   }
 
   getChoice(): Observable<any>{
-    return this.http.get(BASE_URL+'/api/form/get')
+    return this.http.get(BASE_URL+'/api/form/getall')
   }
   
 }

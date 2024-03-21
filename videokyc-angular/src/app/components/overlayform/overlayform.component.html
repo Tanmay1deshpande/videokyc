@@ -1,10 +1,10 @@
-<form [formGroup]="postChoiceForm">
+<form (ngSubmit)="postChoiceData" [formGroup]="postChoiceForm">
     <div>
         <label for="bd">Business Description: </label>
-        <input type="text" name="bd" id="bd" placeholder="Enter data" required formControlName="Business_Description" />
+        <input type="text" name="bd" id="bd" placeholder="Enter data" required formControlName="business_Description" />
     </div>
 
-    <form class="dropdowns" [formGroup]="postChoiceForm">
+    <form class="dropdowns" (ngSubmit)="postChoiceData" [formGroup]="postChoiceForm">
         <div class="left">
             <div>
                 <label for="login">Step 1: </label>
@@ -66,7 +66,7 @@
 
         </div>
     </form>
-    <button class="primary-btn" type="button" (click)="postChoiceData()" routerLink="/vkyc">Submit</button>
+    <button class="primary-btn" type="button" (click)="postChoiceData(); onsubmit()" >Submit</button>
 
     <hr class="divider">
 
