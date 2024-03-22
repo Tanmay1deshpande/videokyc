@@ -23,7 +23,10 @@ import { MatButtonModule, MatIconButton } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
-import { MatDialogModule } from '@angular/material/dialog'
+import { MatDialogModule } from '@angular/material/dialog';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ import { MatDialogModule } from '@angular/material/dialog'
     OverlayformComponent,
     DatacardComponent,
     JourneyComponent,
-    AlertmsgComponent
+    AlertmsgComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,9 @@ import { MatDialogModule } from '@angular/material/dialog'
     MatIconButton
     
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

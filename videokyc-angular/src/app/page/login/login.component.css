@@ -29,7 +29,7 @@ html{
 
 
 .logo{
-    background-color: blue;
+    background:linear-gradient(to right,rgb(96, 96, 255), blue) ;
     border-radius: 50px;
     width: 80px;
     height: 80px;

@@ -1,8 +1,9 @@
 .mainbox{
     display: flex;
-    margin: 0px 0px 50px 80px;
+    margin: 0px 10px 0px 80px;
     color: white;
     line-height: 40px;
+    height: fit-content;
 }
 
 table, th, td{
@@ -17,11 +18,13 @@ table, th, td{
     display: flex;
     gap: 10px;
     margin-top: 50px;
+    height: fit-content;
 }
 
 .yourdata{
     width: 15%;
     margin-top: 50px;
+    height: fit-content;
 }
 
 .video{
@@ -37,7 +40,7 @@ video{
 }
 .vertical{
     width: 2px;
-    height: 500px;
+    height: 100vh;
     color: white;
     background-color: white;
     margin-right: 10px;
@@ -46,7 +49,7 @@ div.titles h4{
     z-index: 200;
     position: absolute;
 }
-i{
+i.fa-solid{
     z-index: 100;
     margin-left: 150px;
     cursor: pointer;
