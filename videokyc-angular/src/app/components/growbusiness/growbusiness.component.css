@@ -1,0 +1,44 @@
+*{
+    color: white;
+}
+
+.grow-business-division{
+    display: flex;
+    margin: 50px;
+}
+
+.grow-business-left{
+    width: 30%;
+}
+
+.grow-business-right{
+    width: 70%;
+}
+
+.grow-business-steps{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.grow-business-step-heading{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.rank{
+    color: blueviolet;
+    font-size: 55px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: 400;
+    width: 90%;
+}

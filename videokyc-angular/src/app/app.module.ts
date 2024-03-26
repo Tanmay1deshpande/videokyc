@@ -28,6 +28,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { FooterComponent } from './components/footer/footer.component';
 import { LearnmoreComponent } from './components/learnmore/learnmore.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { SolutionsComponent } from './page/solutions/solutions.component';
+import { GrowbusinessComponent } from './components/growbusiness/growbusiness.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     AlertmsgComponent,
     FooterComponent,
     LearnmoreComponent,
-    CarouselComponent
+    CarouselComponent,
+    SolutionsComponent,
+    GrowbusinessComponent
   ],
   imports: [
     BrowserModule,

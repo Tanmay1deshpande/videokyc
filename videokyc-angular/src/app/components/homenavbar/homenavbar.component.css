@@ -1,10 +1,10 @@
 .flexbox{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
     width: 100vw;
     height: 100%;
-    gap: 120px;
+    /* gap: 120px; */
 }
 
 .logo{
@@ -17,7 +17,7 @@
     justify-content: center;
     display: flex;
     font-size: 20px;
-    margin-left: 160px;
+    margin-left: 70px;
     cursor: pointer;
 
 }
@@ -34,7 +34,7 @@ div.logo a{
 }
 
 .nav-item{
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     cursor: pointer;
     position: relative;
@@ -75,7 +75,7 @@ nav{
 .buttons{
     display: flex;
     gap: 30px;
-    margin-right: 120px;
+    margin-right: 70px;
 }
 
 .loginbtn{
