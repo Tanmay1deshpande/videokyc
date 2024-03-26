@@ -12,11 +12,22 @@
 }
 
 table, th, td{
-    border: 0.5px solid white;
-    border-collapse: collapse;
     padding: 3px 8px 3px 8px;
-    width: 75vw;
+    width: 80vw;
     margin-bottom: 50px;
+}
+
+table, td{
+    border: 1px solid rgb(137, 137, 137);
+    border-radius: 10px;
+}
+
+table.alternate tr:nth-child(odd) {
+    background-color: #232649;
+}
+
+table.alternate tr:nth-child(even) {
+    background-color: #340d38;
 }
 
 .content{
@@ -63,4 +74,10 @@ i.fa-solid{
 
 div.titles hr{
     overflow: hidden;
+}
+
+h4.yourdatahead{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
