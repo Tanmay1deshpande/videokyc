@@ -1,12 +1,23 @@
 <app-homenavbar></app-homenavbar>
 
-<div class="herotext">
+<div class="ip">
     <p class="welcome" *ngIf="latestRecord">Welcome {{latestRecord.username}}</p>
     <p class="welcome">IP Address: {{ip}}</p>
-    <h3>Jio DigiGov Team Presents</h3>
-    <h1>Video KYC</h1>
-    <p class="description">Video KYC is a mode through which users can complete the KYC for their accounts within just a few minutes. During the process, customer's KYC documents are verified and their signatures are recorded through a video call with a bank officer, thus doing away with the need of physically visiting a bank branch.</p>
-    <hr class="genericdivider">
+</div>
+
+<div class="herotext">
+    
+    <div class="herotext-head">
+        <h3>Jio DigiGov Team Presents</h3>
+        <h1>Video KYC</h1>
+        <p class="description">VCIP is an end-to-end encrypted, real-time, video-based customer identification & verification procedure introduced by the RBI. It enables banks & other regulated financial institutions to conduct paperless KYC over a video call with the assistance of a trained official.</p>
+        <!-- <hr class="genericdivider"> -->
+    </div>
+
+    <div class="heroimg">
+        <img src="https://jep-asset.akamaized.net/cms/assets/jfs/pdp/bank/bank-in-a-hassle-free-way.webp" alt="Stock Image">
+    </div>
+
 </div>
 
 <app-flowitem></app-flowitem>
