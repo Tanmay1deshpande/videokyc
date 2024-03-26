@@ -26,6 +26,8 @@ import { MatInputModule } from '@angular/material/input'
 import { MatDialogModule } from '@angular/material/dialog';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'
 import { FooterComponent } from './components/footer/footer.component';
+import { LearnmoreComponent } from './components/learnmore/learnmore.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { FooterComponent } from './components/footer/footer.component';
     DatacardComponent,
     JourneyComponent,
     AlertmsgComponent,
-    FooterComponent
+    FooterComponent,
+    LearnmoreComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

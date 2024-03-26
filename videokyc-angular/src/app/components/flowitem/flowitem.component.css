@@ -5,14 +5,13 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 .box{
     margin: auto;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .flow{
@@ -48,7 +47,7 @@ ol li{
     margin: auto;
     margin-top: 50px;
 }
-.primary-btn{
+/* .primary-btn{
     height: 50px;
     width: 300px;
     font-weight: 500;
@@ -68,4 +67,4 @@ ol li{
     border: 1px solid white;
     box-shadow: 4px 4px 0 0 white;
     transition: 0.3s ease-in;
-}
+} */
