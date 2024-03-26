@@ -46,4 +46,28 @@
     align-items: center;
     margin-bottom: 15px;
   }
+
+  .carousel-heading{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+  }
   
+  h4.heading{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  p.description{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    width: 700px;
+    text-align: center;
+  }
