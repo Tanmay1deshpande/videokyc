@@ -1,0 +1,10 @@
+<div class="carousel-container">
+    <div class="carousel-wrapper" [style.left]="-currentIndex * 25 + 'vw'">
+      <div class="carousel-item" *ngFor="let item of carouselContent" >
+         <mat-icon> {{item.iconName}} </mat-icon>
+          <span> {{item.text}} </span>
+    </div>
+    </div>
+</div>
+<hr class="divider">
+  
