@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class FlowitemComponent {
 
+  flowlist=[ 
+    {flowIcon: 'login', flowTitle: 'Login'},
+    {flowIcon: 'person', flowTitle: 'Personal Details'},
+    {flowIcon: 'location_on', flowTitle: 'Location'},
+    {flowIcon: 'credit_card', flowTitle: 'PAN Card'},
+    {flowIcon: 'lock', flowTitle: 'DigiLocker'},
+    {flowIcon: 'face', flowTitle: 'Facematch'},
+    {flowIcon: 'report', flowTitle: 'KYC Report'},
+  ]
+
 }

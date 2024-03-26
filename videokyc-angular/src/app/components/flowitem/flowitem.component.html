@@ -1,4 +1,4 @@
-<div class="box">
+<!-- <div class="box">
     <h4>Video KYC Flow</h4>
     <div class="flow">
         <ol>
@@ -10,7 +10,17 @@
             <li>Face Match</li>
             <li>KYC Report</li>
         </ol>
-        <button class="primary-btn" routerLink="/journey">Create Your Journey</button>
-        <hr class="divider">
+        
     </div>
-</div> 
+</div>  -->
+
+<div class="flowcards">
+    <h4>Video KYC Flow</h4>
+    <div class="cards">
+        <div class="onecard" *ngFor="let flowitem of flowlist" >
+            <mat-icon> {{flowitem.flowIcon}} </mat-icon>
+            <h3> {{flowitem.flowTitle}} </h3>
+        </div>
+    </div>
+    <button class="primary-btn" routerLink="/journey">Create Your Journey</button>
+</div>
