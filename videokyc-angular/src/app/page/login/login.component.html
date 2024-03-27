@@ -5,26 +5,28 @@
 
 <!-- Login Box -->
 <div class="signupbox">
-    <div class="heading">
-        <div class="logo">Jio</div>
-        <div class="head">Video KYC</div>
-    </div>
-
-    <h1>Login</h1>
- 
-    <div class="already">
-        <h4>Don't have an account?</h4>
-        <a class="link" routerLink="/signup">Sign Up!</a>
+    <div class="signupbox-left">
+        <div class="heading">
+            <div class="logo">Jio</div>
+            <div class="head">Video KYC</div>
+        </div>
+        <h1>Login</h1>
+        <div class="already">
+            <h4>Don't have an account?</h4>
+            <a class="link" routerLink="/signup">Sign Up!</a>
+        </div>
+        
     </div>
     
-    <form class="form" (ngSubmit)="postUserData" [formGroup]="postUserForm">
-    
-        <input type="text" name="username" placeholder="UserName" formControlName="username">
-        <input type="text" name="email" placeholder="Email ID" formControlName="email">
-        <input type="text" name="password" placeholder="Password" formControlName="password">
-        <button class="primary-btn" type="button" (click)="postUserData(); onsubmit()" >Login</button>
-
-    </form>
+    <div class="signupbox-right">
+        <form class="form" (ngSubmit)="postUserData" [formGroup]="postUserForm">
+        
+            <input type="text" name="username" placeholder="UserName" formControlName="username">
+            <input type="text" name="email" placeholder="Email ID" formControlName="email">
+            <input type="text" name="password" placeholder="Password" formControlName="password">
+            <button class="primary-btn" type="button" (click)="postUserData(); onsubmit()" >Login</button>
+        </form>
+    </div>
 </div>
 
 
