@@ -12,7 +12,7 @@ html{
     border-radius: 15px;
     background: linear-gradient(to bottom left, #300B38, #232649) ;
     color: white;
-    width: 60vw;
+    width: 70vw;
     height: 40vh;
     margin: auto;
     margin-top: 50px;
@@ -33,7 +33,7 @@ html{
     border-left: 3px solid white;
     padding-left: 20px;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     display: flex;
 }
 
@@ -70,7 +70,7 @@ html{
 
 h1{
     font-weight: 500;
-    font-size: 35px;
+    font-size: 28px;
     margin-top: 35px;
     margin-bottom: 10px;
 }

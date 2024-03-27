@@ -74,7 +74,7 @@ html, body { height: 100%; }
     font-size: 18px;
     cursor: pointer;
     margin-bottom: 50px;
-    border: 1px solid black;
+    border: 1px solid rgb(15, 28, 192);
 }
 
 .primary-btn:hover{
