@@ -30,6 +30,7 @@ import { LearnmoreComponent } from './components/learnmore/learnmore.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SolutionsComponent } from './page/solutions/solutions.component';
 import { GrowbusinessComponent } from './components/growbusiness/growbusiness.component';
+import { AboutusComponent } from './page/aboutus/aboutus.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { GrowbusinessComponent } from './components/growbusiness/growbusiness.co
     LearnmoreComponent,
     CarouselComponent,
     SolutionsComponent,
-    GrowbusinessComponent
+    GrowbusinessComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

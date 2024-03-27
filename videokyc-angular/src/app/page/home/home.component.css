@@ -72,3 +72,31 @@ p.description{
     width: 500px;
     text-align: left;
 }
+
+.herotext-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.become-btn{
+    width: 40%;
+    height: 40px;
+}
+
+.become-btn:hover{
+    box-shadow: 4px 4px 0 0 blueviolet;
+    transition: 0.2s ease-in;
+    border: none;
+}
+
+.portal-btn{
+    width: 40%;
+    height: 40px;
+    color: black;
+    border: 1px solid black;
+}
+
+.portal-btn:hover{
+    transition: 0.2s ease-in;
+    box-shadow: 4px 4px 0 0 black;
+}

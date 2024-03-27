@@ -1,10 +1,13 @@
 <div class="grow-business-division">
-    <div class="grow-business-left">
-        <h1 class="grow-buiness-title">Grow Your Business with Jio VCIP</h1>
-    </div>
+    <section #fixedSection class="grow-business-left">
+        <h1 [class.fixed]="isFixed" class="grow-business-title" 
+        [style.top.px]="isFixed ? 0 : originalTop"
+        >Grow Your Business with Jio VCIP</h1>
+        <div class="placeholder" [class.fixed]="isFixed"></div>
+    </section>
 
-    <div class="grow-buiness-right">
-        <div class="grow-buiness-steps" *ngFor="let item of growbusinesssteps" >
+    <div class="grow-business-right">
+        <div class="grow-business-steps" *ngFor="let item of growbusinesssteps" >
             <div class="grow-business-step-heading">
                 <h1 class="rank"> {{item.rank}} </h1>
                 <h2 class="title"> {{item.title}} </h2>
@@ -13,3 +16,6 @@
         </div>
     </div>
 </div>
+<hr>
+
+<app-footer></app-footer>

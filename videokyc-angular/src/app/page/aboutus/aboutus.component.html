@@ -1,0 +1,31 @@
+<app-homenavbar></app-homenavbar>
+
+
+
+<div class="about-us-top" *ngFor="let item of aboutUsTop" >
+    <h1 class="about-us-heading"> {{item.title}} </h1>
+    <div class="about-us-box">
+        <div class="about-us-right">
+            <p class="about-us-description"> {{item.paragraph}} </p>
+        </div>
+        <div class="about-us-left">
+            <img src={{item.imgSrc}} alt="stock image">
+        </div>
+    </div>
+</div>
+
+<!-- <hr class="faded-divider"> -->
+
+<div class="about-us-top" *ngFor="let item of aboutUsContent">
+    <div class="about-us-box">
+        <div class="about-us-left">
+            <img src={{item.imgSrc}} alt="stock image">
+        </div>
+        <div class="about-us-right">
+            <h1 class="about-us-content-heading" id="about-us-content-heading-id" > {{item.title}} </h1>
+            <p class="about-us-description"> {{item.paragraph}} </p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
