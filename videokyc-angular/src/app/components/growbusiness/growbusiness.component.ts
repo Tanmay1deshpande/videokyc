@@ -29,7 +29,7 @@ export class GrowbusinessComponent implements AfterViewInit{
     //if (this.fixedSection) { // Check if fixedSection is defined
       const sectionTop = this.fixedSection.nativeElement.getBoundingClientRect().top;
       const sectionBottom = this.fixedSection.nativeElement.getBoundingClientRect().bottom;
-      this.isFixed = sectionTop <= 0 && sectionBottom > 185;
+      this.isFixed = sectionTop <= 0 && sectionBottom > 135;
     //}
   }
 

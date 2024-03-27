@@ -31,6 +31,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { SolutionsComponent } from './page/solutions/solutions.component';
 import { GrowbusinessComponent } from './components/growbusiness/growbusiness.component';
 import { AboutusComponent } from './page/aboutus/aboutus.component';
+import { BecomepartnerComponent } from './page/becomepartner/becomepartner.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { AboutusComponent } from './page/aboutus/aboutus.component';
     CarouselComponent,
     SolutionsComponent,
     GrowbusinessComponent,
-    AboutusComponent
+    AboutusComponent,
+    BecomepartnerComponent
   ],
   imports: [
     BrowserModule,

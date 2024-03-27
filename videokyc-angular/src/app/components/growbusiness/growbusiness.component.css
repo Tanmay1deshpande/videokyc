@@ -65,7 +65,12 @@ hr{
     width: 30%;
     margin: 0px 50px 0px 50px;
     z-index: 999; /* Ensure it's on top of other content */
-    transition: top 0.5s ease;
+    /* transition: top 0.5s ease; */
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
   }
   
   .placeholder {
@@ -73,4 +78,11 @@ hr{
     height: 50px; /* Adjust height as needed */
     /* width: 30%; */
   }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
    
