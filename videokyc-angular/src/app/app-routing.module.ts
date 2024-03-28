@@ -9,6 +9,8 @@ import { JourneyComponent } from './page/journey/journey.component';
 import { SolutionsComponent } from './page/solutions/solutions.component';
 import { AboutusComponent } from './page/aboutus/aboutus.component';
 import { BecomepartnerComponent } from './page/becomepartner/becomepartner.component';
+import { ContactusComponent } from './page/contactus/contactus.component';
+import { FlowinfopageComponent } from './page/flowinfopage/flowinfopage.component';
 
 const routes: Routes = [
 
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'solutions', component: SolutionsComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'partnersignup', component: BecomepartnerComponent },
+  { path: 'contactus', component: ContactusComponent },
+  { path: 'flowinfo', component: FlowinfopageComponent },
   { path: '**', component: SignupComponent }
 
 ];

@@ -1,0 +1,20 @@
+<app-homenavbar></app-homenavbar>
+
+<div class="contactus-white-bg">
+    <div class="contactus-top">
+        <div class="logo">Jio</div>
+        <h1 class="contactus-heading">Contact our Friendly Team</h1>
+        <p class="contactus-para">Let us know how we can help you.</p>
+    </div>
+    
+    <div class="contactus-cards">
+        <div class="contactus-single-card" *ngFor="let item of contactUsCardContent" >
+            <mat-icon> {{item.icon}} </mat-icon>
+            <h4 class="card-title"> {{item.title}} </h4>
+            <p class="card-para"> {{item.para}} </p>
+            <p class="card-link" > {{item.link}} </p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

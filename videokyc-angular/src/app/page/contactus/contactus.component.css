@@ -1,0 +1,79 @@
+.contactus-white-bg{
+    background-color: white;
+    padding: 50px 80px;
+}
+
+.contactus-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.contactus-heading{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.contactus-para{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactus-cards{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contactus-single-card{
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactus-single-card:hover{
+    border: 1px solid blueviolet;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+mat-icon{
+    background-color: #340d38;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  p.card-link{
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .logo{
+    background:linear-gradient(to right,rgb(96, 96, 255), blue) ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+}
