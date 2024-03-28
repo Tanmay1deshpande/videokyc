@@ -1,0 +1,23 @@
+<app-homenavbar></app-homenavbar>
+
+<div class="flowinfo-main">
+    <div class="flowinfo-left">
+        <h1 class="flowinfo-heading">Video KYC Info</h1>
+        <p class="flowinfo-heading-para">An instant way to open a bank account through Video Customer Identification Process (V-CIP)
+        Imagine sitting on a <strong>comfortable</strong> couch, binge watching your favourite series and enjoying the pleasant atmosphere created inside the house. It all sounds like a leisure moment, right? But, what if you had to leave all of this behind and go to a bank to complete your KYC process for opening an account? We know what it feels like.
+        To help our existing customers and potential clients enjoy a convenient banking experience, Indian Bank has introduced <strong>V-CIP (Video-Customer Identification Process)</strong> for customers to complete their account opening process through a video KYC. Now customers can skip the queue and open an account from the comfort of their homes, anytime.
+        </p>
+    </div>
+    
+    <div class="flowinfo-right">
+        <div class="flowinfo-content" *ngFor="let item of flowinfoContent" >
+            <div class="flowinfo-content-top">
+                <mat-icon> {{item.icon}} </mat-icon>
+                <h2 class="flowinfo-content-title"> {{item.title}} </h2>
+            </div>
+            <p class="flowinfo-description"> {{item.para}} </p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

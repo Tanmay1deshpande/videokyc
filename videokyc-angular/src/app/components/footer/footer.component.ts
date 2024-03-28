@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  constructor() { }
+
+  openWebsite(websiteUrl: string) {
+    window.open(websiteUrl, '_blank'); // Open the website in a new tab
+  }
+
 }

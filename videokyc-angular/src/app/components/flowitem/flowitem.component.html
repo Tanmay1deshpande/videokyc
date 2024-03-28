@@ -17,7 +17,7 @@
 <div class="flowcards">
     <h4>Video KYC Flow</h4>
     <div class="cards">
-        <div class="onecard" *ngFor="let flowitem of flowlist" >
+        <div class="onecard" *ngFor="let flowitem of flowlist" routerLink="/flowinfo" >
             <mat-icon> {{flowitem.flowIcon}} </mat-icon>
             <h3> {{flowitem.flowTitle}} </h3>
         </div>

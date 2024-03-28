@@ -1,0 +1,74 @@
+.flowinfo-main{
+    background-color: white;
+    padding:50px 80px ;
+    display: flex;
+    gap: 20px;
+}
+
+.flowinfo-left{
+    width: 30%;
+    padding-right: 20px;
+}
+
+.flowinfo-right{
+    width: 70%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
+
+h1.flowinfo-heading{
+    font-size: 55px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.flowinfo-heading-para{
+    line-height: 35px;
+}
+
+.flowinfo-description{
+    margin-bottom: 20px;
+    /* width: 70%; */
+    font-size: 14px;
+}
+
+.flowinfo-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    border:1px solid transparent;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(222, 155, 255, 0.2), 0 6px 20px 0 rgba(222, 155, 255, 0.19);
+}
+
+.flowinfo-content-top{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flowinfo-content:hover{
+    border: 1px solid blueviolet;
+}
+
+h2.flowinfo-content-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+mat-icon{
+    background-color: #340d38;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
