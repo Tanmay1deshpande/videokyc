@@ -11,6 +11,7 @@ import { AboutusComponent } from './page/aboutus/aboutus.component';
 import { BecomepartnerComponent } from './page/becomepartner/becomepartner.component';
 import { ContactusComponent } from './page/contactus/contactus.component';
 import { FlowinfopageComponent } from './page/flowinfopage/flowinfopage.component';
+import { ChooseusComponent } from './page/chooseus/chooseus.component';
 
 const routes: Routes = [
 
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'partnersignup', component: BecomepartnerComponent },
   { path: 'contactus', component: ContactusComponent },
   { path: 'flowinfo', component: FlowinfopageComponent },
+  { path: 'chooseus', component: ChooseusComponent },
   { path: '**', component: SignupComponent }
 
 ];

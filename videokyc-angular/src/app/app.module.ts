@@ -34,6 +34,7 @@ import { AboutusComponent } from './page/aboutus/aboutus.component';
 import { BecomepartnerComponent } from './page/becomepartner/becomepartner.component';
 import { ContactusComponent } from './page/contactus/contactus.component';
 import { FlowinfopageComponent } from './page/flowinfopage/flowinfopage.component';
+import { ChooseusComponent } from './page/chooseus/chooseus.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { FlowinfopageComponent } from './page/flowinfopage/flowinfopage.componen
     AboutusComponent,
     BecomepartnerComponent,
     ContactusComponent,
-    FlowinfopageComponent
+    FlowinfopageComponent,
+    ChooseusComponent
   ],
   imports: [
     BrowserModule,
