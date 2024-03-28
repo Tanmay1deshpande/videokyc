@@ -13,7 +13,7 @@ import { BecomepartnerComponent } from './page/becomepartner/becomepartner.compo
 const routes: Routes = [
 
   //Routing paths
-  { path: '', redirectTo:'login', pathMatch:'full' },
+  { path: '', redirectTo:'home', pathMatch:'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'vkyc', component: VkycComponent },

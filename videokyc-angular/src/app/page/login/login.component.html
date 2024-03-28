@@ -22,8 +22,8 @@
         <form class="form" (ngSubmit)="postUserData" [formGroup]="postUserForm">
         
             <input type="text" name="username" placeholder="UserName" formControlName="username">
-            <!-- <input type="text" name="email" placeholder="Email ID" formControlName="email"> -->
-            <input type="text" name="password" placeholder="Password" formControlName="password">
+            <!-- <input type="email" name="email" placeholder="Email ID" formControlName="email"> -->
+            <input type="password" name="password" placeholder="Password" formControlName="password">
             <button class="primary-btn" type="button" (click)="postUserData(); onsubmit()" >Login</button>
         </form>
     </div>

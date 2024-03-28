@@ -20,7 +20,7 @@ export class LoginComponent {
     //form validators
     this.postUserForm = this.fb.group({
       username:['', [Validators.required]],
-      email:['', [Validators.required,Validators.email]],
+      //email:['', [Validators.required,Validators.email]],
       password:['', [Validators.required, Validators.minLength(8)]]
     })
   }
