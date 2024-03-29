@@ -10,7 +10,7 @@ import { StepsformService } from 'src/app/services/stepsform.service';
   templateUrl: './vkyc.component.html',
   styleUrls: ['./vkyc.component.css']
 })
-export class VkycComponent implements AfterViewInit{
+export class VkycComponent {
 
   stepslist = [
     {step:'Login', val:'s1'},
@@ -59,17 +59,17 @@ export class VkycComponent implements AfterViewInit{
   }
 
   //Camera output
-  @ViewChild('videoPlayer')
-  videoPlayer!: ElementRef;
+  // @ViewChild('videoPlayer')
+  // videoPlayer!: ElementRef;
 
-  async ngAfterViewInit() {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      this.videoPlayer.nativeElement.srcObject = stream;
-    } catch (error) {
-      console.error('Error accessing camera:', error);
-    }
+  // async ngAfterViewInit() {
+  //   try {
+  //     const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+  //     this.videoPlayer.nativeElement.srcObject = stream;
+  //   } catch (error) {
+  //     console.error('Error accessing camera:', error);
+  //   }
 
-  }
+  // }
 }
 
